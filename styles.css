@@ -1,0 +1,129 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+	font-family: 'FontAwesome', sans-serif;
+}
+
+/*Fixed CSS*/
+html body {
+	font-family: 'Poiret One', cursive;
+	background-color: #e7ccff;
+}
+
+.header .container {
+		display: flex;
+		flex: wrap;
+	}
+
+	#head {
+		width: 50%;
+	}
+
+	.the-dev {
+		text-align: right;
+	}
+
+	.featured-work a {
+		font-size: 24px;
+		color: #1e1e1e;
+		text-decoration: none;
+	}
+
+/*Screens at 450px and smaller*/
+@media screen and (min-width: 250px) and (max-width: 550px) {
+
+	.logo p {
+		display: none;
+	}
+
+	.hero img, .featured-work img {
+		max-width: 100%;
+	}
+
+	.github a, .github p {
+		font-size: 60px;
+		color: black;
+		text-decoration: none;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 551px) and (max-width: 800px) {
+
+	.hero img {
+		max-width: 100%;
+		margin-top: 15px;
+	}
+
+	.featured-work .container {
+		display: flex;
+		flex: wrap;
+		text-align: center;
+	}
+
+	.featured-work picture {
+		margin-right: 15px;
+		margin-top: 30px;
+		width: calc((100% - 20) / 3);
+	}
+
+	.featured-work picture:last-of-type {
+		margin-right: 0;
+	}
+
+	.featured-work h3, h2 {
+		display: none;
+	}
+
+	.github a, .github p {
+		font-size: 60px;
+		color: black;
+		text-decoration: none;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	body {
+		width: 900px;
+		margin: auto;
+		font-size: 16px;
+	}
+
+	.hero img {
+		width: 750px;
+		max-width: 100%;
+		margin-top: 15px;
+		margin: auto;
+		float: right;
+		margin-bottom: 20px;
+	}
+
+	#sub-header {
+		clear: both;
+	}
+
+	.featured-work .container {
+		display: flex;
+		flex: wrap;
+		text-align: center;
+	}
+
+	.featured-work picture {
+		margin-right: 15px;
+		margin-top: 30px;
+		width: calc((100% - 20) / 3);
+	}
+
+	.featured-work picture:last-of-type {
+		margin-right: 0;
+	}
+
+	.github a, .github p {
+		font-size: 60px;
+		color: black;
+		text-decoration: none;
+		text-align: center;
+	}
+}

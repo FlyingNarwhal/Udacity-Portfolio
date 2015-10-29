@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio project for Udacity project",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlyingNarwhal/Portfolio.git"
+  },
+  "author": "Joe Dahle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlyingNarwhal/Portfolio/issues"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.5",
+    "grunt": "~0.4.5"
+  },
+  "dependencies": {
+    "grunt-responsive-images": "^0.1.6"
+  },
+  "homepage": "https://github.com/FlyingNarwhal/Portfolio#readme"
+}
