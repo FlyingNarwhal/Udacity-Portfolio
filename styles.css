@@ -13,10 +13,9 @@ html body {
 
 .header .container {
 		display: flex;
-		flex: wrap;
 	}
 
-	#head {
+	#head, #head-two {
 		width: 50%;
 	}
 
@@ -58,7 +57,6 @@ html body {
 
 	.featured-work .container {
 		display: flex;
-		flex: wrap;
 		text-align: center;
 	}
 
@@ -106,7 +104,6 @@ html body {
 
 	.featured-work .container {
 		display: flex;
-		flex: wrap;
 		text-align: center;
 	}
 
@@ -118,6 +115,10 @@ html body {
 
 	.featured-work picture:last-of-type {
 		margin-right: 0;
+	}
+
+	.featured-work a {
+		padding: 10px 10px;
 	}
 
 	.github a, .github p {
