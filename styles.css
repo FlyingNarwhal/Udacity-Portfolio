@@ -6,38 +6,57 @@
 }
 
 /*Fixed CSS*/
-html body {
+body {
 	font-family: 'Poiret One', cursive;
 	background-color: #e7ccff;
 }
 
-.header .container {
-		display: flex;
-	}
+header {
+	display: inline-block;
+	width: 100%
+}
 
-	#head, #head-two {
-		width: 50%;
-	}
+.logo-left,
+.logo-right {
+	width: 50%;
+	display: inline-block;
+}
 
-	.the-dev {
-		text-align: right;
-	}
+.logo-right {
+	float: right;
+	text-align: right;
+}
 
-	.featured-work a {
-		font-size: 24px;
-		color: #1e1e1e;
-		text-decoration: none;
-	}
+.featured-work a {
+	font-size: 24px;
+	color: #1e1e1e;
+	text-decoration: none;
+}
 
-/*Screens at 450px and smaller*/
-@media screen and (min-width: 250px) and (max-width: 550px) {
+.img-title {
+	color: #1e1e1e;
+	text-decoration: none;
+	font-size: 24px;
+	padding: 0 8px 0 8px;
+}
 
-	.logo p {
-		display: none;
-	}
+.img-title:hover {
+	color: black;
+}
 
-	.hero img, .featured-work img {
+
+/*Screens at 550px and smaller*/
+@media screen and (max-width: 550px) {
+	.hero-img {
 		max-width: 100%;
+	}
+
+	.ft-img {
+		max-width: 100%;
+	}
+
+	.title {
+		/*padding-top: 10px;*/
 	}
 
 	.github a, .github p {
@@ -50,28 +69,30 @@ html body {
 
 @media screen and (min-width: 551px) and (max-width: 800px) {
 
-	.hero img {
+	.hero-img {
 		max-width: 100%;
 		margin-top: 15px;
 	}
 
-	.featured-work .container {
-		display: flex;
+	.section-break {
+		width: 100%;
 		text-align: center;
 	}
 
-	.featured-work picture {
+
+	.featured-work {
+		display: flex;
+		max-width: 100%;
+	}
+
+	.ft-img {
 		margin-right: 15px;
-		margin-top: 30px;
-		width: calc((100% - 20) / 3);
+		margin-top: 10px;
+		max-width: 100%
 	}
 
-	.featured-work picture:last-of-type {
+	.ft-img:last-of-type {
 		margin-right: 0;
-	}
-
-	.featured-work h3, h2 {
-		display: none;
 	}
 
 	.github a, .github p {
@@ -85,40 +106,38 @@ html body {
 @media screen and (min-width: 801px) {
 	body {
 		width: 900px;
+		max-width: 90%;
 		margin: auto;
 		font-size: 16px;
 	}
 
-	.hero img {
+	.hero-img {
+		display: flex;
 		width: 750px;
 		max-width: 100%;
-		margin-top: 15px;
-		margin: auto;
-		float: right;
-		margin-bottom: 20px;
+		margin: 10px auto 15px auto;
 	}
 
-	#sub-header {
-		clear: both;
-	}
-
-	.featured-work .container {
-		display: flex;
+	.section-break {
+		width: 100%;
 		text-align: center;
 	}
 
-	.featured-work picture {
+	.featured-work {
+		display: flex;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.ft-img {
 		margin-right: 15px;
-		margin-top: 30px;
-		width: calc((100% - 20) / 3);
+		margin-top: 10px;
+		width: 100%;
+		max-width: 100%
 	}
 
-	.featured-work picture:last-of-type {
+	.ft-img:last-of-type {
 		margin-right: 0;
-	}
-
-	.featured-work a {
-		padding: 10px 10px;
 	}
 
 	.github a, .github p {
