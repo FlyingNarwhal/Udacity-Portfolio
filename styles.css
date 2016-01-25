@@ -8,23 +8,20 @@
 /*Fixed CSS*/
 body {
 	font-family: 'Poiret One', cursive;
-	background-color: #e7ccff;
+	background-color: #e1e1e1;
+	max-width: 100%;
 }
 
 header {
 	display: inline-block;
-	width: 100%
+	max-width: 100%;
+	width: 100%;
 }
 
-.logo-left,
 .logo-right {
-	width: 50%;
+	width: 100%;
 	display: inline-block;
-}
-
-.logo-right {
-	float: right;
-	text-align: right;
+	text-align: center;
 }
 
 .featured-work a {
@@ -44,19 +41,42 @@ header {
 	color: black;
 }
 
+.about img {
+	border-radius: 50%;
+}
+
+.credit {
+	max-width: 90%;
+	font-size: 10px;
+}
 
 /*Screens at 550px and smaller*/
 @media screen and (max-width: 550px) {
-	.hero-img {
-		max-width: 100%;
-	}
-
-	.ft-img {
-		max-width: 100%;
+	.about img{
+		width: 40%;
+		margin-left: 30%;
 	}
 
 	.title {
-		/*padding-top: 10px;*/
+		text-align: center;
+	}
+
+	.featured-work {
+		max-width: 100%;
+	}
+
+	.featured-work a {
+		font-size: 80px;
+		text-decoration: none;
+		text-align: center;
+		color: #000;
+		margin-left: 40%;
+	}
+
+	.featuredWork-title{
+		text-align: left;
+		font-size: 24px;
+		text-align: center;
 	}
 
 	.github a, .github p {
@@ -69,30 +89,27 @@ header {
 
 @media screen and (min-width: 551px) and (max-width: 800px) {
 
-	.hero-img {
-		max-width: 100%;
-		margin-top: 15px;
+	.about img {
+		width: 40%;
+		margin-left: 30%;
 	}
 
-	.section-break {
-		width: 100%;
+	.title {
 		text-align: center;
 	}
 
-
 	.featured-work {
+		display: inline-block;
+		/*max-width: 100%;*/
+	}
+
+	.project {
 		display: flex;
-		max-width: 100%;
+		flex-wrap: wrap;
 	}
 
-	.ft-img {
-		margin-right: 15px;
-		margin-top: 10px;
-		max-width: 100%
-	}
-
-	.ft-img:last-of-type {
-		margin-right: 0;
+	.featured-work a{
+		font-size: 70px;
 	}
 
 	.github a, .github p {
@@ -109,6 +126,12 @@ header {
 		max-width: 90%;
 		margin: auto;
 		font-size: 16px;
+	}
+
+	.about img {
+		width: 20%;
+		margin-left: 40%;
+		border-radius: 50%;
 	}
 
 	.hero-img {
